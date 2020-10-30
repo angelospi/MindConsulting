@@ -14,7 +14,7 @@ mongoose.connect('mongodb+srv://mindconsulting:mindconsulting@cluster0.scuoy.mon
 
 app.use(cors());
 app.use(express.json());
-app.use('./files', express.static(path.resolve(__dirname,'..','uploads')));
+app.use('/files', express.static(path.resolve(__dirname,'..','uploads')));
 app.use(routes);
 
 

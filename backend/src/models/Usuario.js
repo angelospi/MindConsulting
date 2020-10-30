@@ -6,9 +6,18 @@ const UsuarioSchema = new mongoose.Schema({
     cpf: Number,
     email: String,
     senha: String,
-    imgPerfil:String,
+    imgPerfil: String,
     nivelAcesso: Number
+},
+{
+    toJSON:{
+        virtuals: true,
+    },
 });
+
+UsuarioSchema.virtual('imgPerfil_url').get(function(){
+    return `http://localhost:3333/files/${this.imgPerfil}`
+})
 
 UsuarioSchema.pre('save', async function(next){
     const hash= await bcrypt.hash(this.senha,10);
