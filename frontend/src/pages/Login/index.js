@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom'
 
+import logo from '../../assets/mind.jpg'
+
 import api from '../../services/api'
 
 import './styles.css'
@@ -36,19 +38,22 @@ export default function Login({ history }){
 
     return (
     <div className="container">
-        <form className="form" onSubmit={handleSubmit}>
-            <input 
-            id="cpf"
-            placeholder="Informe seu CPF"
-            value={cpf}
-            onChange={event=>setCpf(event.target.value)}/>
+        <form className="form" onSubmit={handleSubmit} >
+        <img src={logo} alt="Logo"/>
+            
+                <input 
+                id="cpf"
+                placeholder="Informe seu CPF"
+                value={cpf}
+                onChange={event=>setCpf(event.target.value)}/>
 
-            <input
-            id="senha"
-            placeholder="Digite uma senha"
-            value={senha}
-            onChange={event=>setSenha(event.target.value)}/> 
-            <button type="submit">Entrar</button>
+                <input
+                id="senha"
+                placeholder="Digite sua senha"
+                value={senha}
+                onChange={event=>setSenha(event.target.value)}/> 
+                <button type="submit">Entrar</button>
+            
 
             <Link to='/cadastro'>Não tenho cadastro</Link>
         </form>

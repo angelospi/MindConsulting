@@ -5,8 +5,13 @@ import './styles.css'
 
 import api from '../../services/api'
 
-export default function DashboardUsu(){
+export default function DashboardUsu({history}){
     const [dados, setDados]=useState({});
+
+    async function atualizar(){
+
+        history.push('/atualizar');
+    }
 
     useEffect(()=>{
         async function DadosUsu(){
@@ -14,7 +19,7 @@ export default function DashboardUsu(){
             const response = await api.get('/dashboardUsuario',{
                 headers:{_id}
             });
-            console.log(response.data)
+            
             setDados(response.data);
             
         }
@@ -26,10 +31,24 @@ export default function DashboardUsu(){
 
     return (
         <div className="dados">
-            <header style={{
-                backgroundImage: `url(${dados.imgPerfil_url})`
-                }}/>
-            <p>{dados.nome}</p>
+            <div className="imagem">
+                <header className="imagem" style={{
+                    backgroundImage: `url(${dados.imgPerfil_url})`
+                    }}/>
+                </div>
+            <div className="form">
+                <h1 className= "Nome">Nome:</h1>
+                <h1>{dados.nome}</h1>
+
+                <h1 className= "CPF">CPF:</h1>
+                <h1>{dados.cpf}</h1>
+
+                <h1 className= "email">E-mail:</h1>
+                <h1>{dados.email}</h1>
+
+                <button className="atualizar" onClick={atualizar} type="submit">Atualizar dados</button>
+            </div>
+            
         </div>
         
     );
