@@ -1,5 +1,5 @@
 .tabela {
-    width: 100%;
+    width: 1400px;
     height: 100vh;
     margin: 0 auto;
     display: grid;
@@ -48,4 +48,50 @@ li h1{
     margin-top: 0px;
     margin-bottom: 0px;
     border: 1px solid black;
+
+    font-size: 22px;
+}
+
+li.indices{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+
+h1.nivelAcesso{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 1px solid black;
+
+    font-size: 22px;
+}
+
+.tabela header.imagem{
+    width: 50px;
+    height: 50px;
+    border-radius: 500px;
+
+    background-size: cover;
+}
+
+.tabela button{
+    width: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    background-color: #4d1175;
+    transition: all 400ms ease;
+}
+
+.tabela button:focus {
+    transition: all 400ms ease;
+    background-color: #610e99;
 }

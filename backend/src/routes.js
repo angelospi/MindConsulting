@@ -14,9 +14,12 @@ routes.get('/usuarios', UsuarioController.index);
 routes.get('/dashboardUsuario', DadosController.dashboard);
 
 
+
 routes.post('/cadastro',upload.single('imgPerfil'), UsuarioController.store);
 routes.post('/login',UsuarioController.login);
+
 routes.put('/modificar',DadosController.modificar);
+routes.put('/modificarAcesso', DadosController.atualizar_acesso);
 
 
 

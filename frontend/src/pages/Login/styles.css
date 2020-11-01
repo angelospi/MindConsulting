@@ -25,25 +25,29 @@ div.container{
 
 .container form.form input{
     border-radius: 10px;
-    margin-top: 90px;
+    margin-top: 40px;
     font-size: 25px;
     color: #444444;
     border-radius: 8px;
-    width: 250px;
+    width: 300px;
 }
 
 .container form.form button{
-    width: 100px;
-    
+    width: 300px;
     border-radius: 5px;
-    margin-top: 200px;
-    color: #ffffff;
-    background-color: #000000;
+    margin-top: 180px;
+    color: #000000;
+    background-color: #850a0a;
+    cursor: pointer;
 
-    font-size: 20px;
+    font-size: 30px;
 
+    margin-bottom: 60px;
+}
 
-    margin-bottom: 70px;
+.container form.form button:hover{
+    transition: all 400ms ease;
+    background-color: #850a0aa1;
 }
 
 .container form.form img{
@@ -54,4 +58,11 @@ div.container{
     position:absolute;
     top:300px
     
+}
+
+.container h1.login{
+    margin-top: 60px;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 0px;
 }

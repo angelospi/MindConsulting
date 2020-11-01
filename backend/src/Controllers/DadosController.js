@@ -20,6 +20,19 @@ module.exports={
 
 
         return res.json(usuario);
+    },
+
+    async atualizar_acesso(req,res){
+        const {_id}=req.headers;
+        const {status}=req.body;
+        const usuario=await Usuario.findById(_id);
+        
+        const nivelAcesso=status;
+        
+        await Usuario.findByIdAndUpdate(_id,{
+            nivelAcesso
+        },{new:true});
+        return res.json();
     }
 
 };
