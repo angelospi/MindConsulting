@@ -1,0 +1,44 @@
+.editar{
+    width: 100%;
+    height: 200vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background: #000000;
+}
+
+.editar form{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+
+    background-color: #410a99c0 ;
+
+}
+.editar div.form-group h1{
+    color: #acacac;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-left:30px ;
+}
+
+.editar div.form-group input{
+    margin-top: 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left:30px ;
+}
+
+.editar form button{
+    margin-top: 120px;
+    border-radius: 10px;
+    font-weight: bold;
+
+    cursor: pointer;
+    width: 150px;
+    margin-left: 50px;
+    font-size: 18px;
+}

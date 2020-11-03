@@ -45,6 +45,7 @@ li h1{
     display: flex;
     justify-content: center;
     width: 300px;
+    height: 50px;
     margin-top: 0px;
     margin-bottom: 0px;
     border: 1px solid black;
@@ -86,6 +87,7 @@ h1.nivelAcesso{
     margin-left: 0px;
     cursor: pointer;
     border: none;
+    height: 50px;
     border-radius: 0;
     background-color: #4d1175;
     transition: all 400ms ease;
@@ -94,4 +96,31 @@ h1.nivelAcesso{
 .tabela button:focus {
     transition: all 400ms ease;
     background-color: #610e99;
+}
+
+.tabela button.ativar{
+    border-top-left-radius:30px ;
+    border-bottom-left-radius:30px ;
+}
+
+.tabela button.desativar{
+    border-top-right-radius:30px ;
+    border-bottom-right-radius:30px ;
+}
+
+.tabela button.editar{
+    border-radius: 30px;
+}
+
+.tabela button{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tabela button.Sair{
+    font-size: 16px;
+    font-style: bold;
+    margin-left: 1200px;
+    margin-top: 60px;
+    border-radius: 20px;
 }

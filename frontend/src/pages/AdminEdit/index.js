@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 
-import './styles.css'
+import './stylesAdmin.css'
 
 import api from '../../services/api'
 
@@ -10,7 +10,7 @@ export default function Login({history}){
     const [nome, setNome]=useState('');
     const [email, setEmail]=useState('');
     const [cpf, setCpf]=useState('');
-
+    const _id = localStorage.getItem('admin');
 
     function cancelar(){
         history.push('/DashboardAdmin');
@@ -18,12 +18,6 @@ export default function Login({history}){
     };
     async function atualizar(event){
         event.preventDefault()
-
-        const _id=localStorage.getItem('user');
-
-
-
-
         await api.put('/modificar',{nome, email, cpf}, {
             headers: {_id}
         });
@@ -36,7 +30,7 @@ export default function Login({history}){
 
     useEffect(()=>{
         async function DadosUsu(){
-            const _id = localStorage.getItem('admin');
+            
             const response = await api.get('/dashboardUsuario',{
                 headers:{_id}
             });
@@ -52,7 +46,7 @@ export default function Login({history}){
     
 
     return(
-        <div className="container">
+        <div className="editar">
             <form>
                 <div className="form-group">
                     <h1>Nome:</h1>

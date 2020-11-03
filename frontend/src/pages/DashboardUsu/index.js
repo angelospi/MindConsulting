@@ -13,6 +13,10 @@ export default function DashboardUsu({history}){
         history.push('/atualizar');
     }
 
+    function sair(){
+        history.push('/');
+    }
+
     useEffect(()=>{
         async function DadosUsu(){
             const _id = localStorage.getItem('user');
@@ -47,6 +51,7 @@ export default function DashboardUsu({history}){
                 <h1>{dados.email}</h1>
 
                 <button className="atualizar" onClick={atualizar} type="submit">Atualizar dados</button>
+                <button className="sair" onClick={sair} type="submit">Sair</button>
             </div>
             
         </div>

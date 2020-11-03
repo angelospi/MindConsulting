@@ -40,6 +40,7 @@ export default function Login({ history }){
     <div className="container">
         <form className="form" onSubmit={handleSubmit} >
         <img src={logo} alt="Logo"/>
+        
         <h1 className="login">LOGIN</h1>
             
                 <input 

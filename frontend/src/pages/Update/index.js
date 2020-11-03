@@ -20,9 +20,7 @@ export default function Login({history}){
         event.preventDefault()
 
         const _id=localStorage.getItem('user');
-
-
-
+       
 
         await api.put('/modificar',{nome, email, cpf}, {
             headers: {_id}
@@ -52,7 +50,7 @@ export default function Login({history}){
     
 
     return(
-        <div className="container">
+        <div className="atualizacao">
             <form>
                 <div className="form-group">
                     <h1>Nome:</h1>

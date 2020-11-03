@@ -9,6 +9,7 @@ export default function DashboardUsu({history}){
     const [dados, setDados]=useState([]);
     const [id, setId]=useState('');
 
+    
     async function ativar(_id){
         const nivelAcesso=1;
 
@@ -16,18 +17,24 @@ export default function DashboardUsu({history}){
             headers:{_id}
         });
 
+        window.location.reload();
+
     }
     async function desativar(_id){
         const nivelAcesso=0;
         await api.put('/modificarAcesso', {status:nivelAcesso}, {
             headers:{_id}
         });
+        window.location.reload();
     }
     function editar(_id){
         localStorage.setItem('admin',_id);
-
+       
         history.push('/AdminEdit');
 
+    }
+    function sair(){
+        history.push('/');
     }
 
 
@@ -67,13 +74,15 @@ export default function DashboardUsu({history}){
                         <h1>{dado.email}</h1>
                         <h1 className="nivelAcesso">{dado.nivelAcesso}</h1>
                     
-                        <button onClick={() => ativar(dado._id)}>Ativar</button>
-                        <button onClick={() => desativar(dado._id)}>Desativar</button>
-                        <button onClick={() => editar(dado._id)}>Editar</button>
+                        <button className="ativar" onClick={() => ativar(dado._id)}>Ativar</button>
+                        <button className="desativar" onClick={() => desativar(dado._id)}>Desativar</button>
+                        <button className="editar" onClick={() => editar(dado._id)}>Editar</button>
                     
                     </li>
+                    
                     ))
                     }
+                    <button className="Sair" onClick={sair}> Sair </button>
             </ul>
     </div>
     );

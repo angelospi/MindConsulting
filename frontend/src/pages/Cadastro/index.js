@@ -13,6 +13,10 @@ export default function Cadastro({ history }){
     const [senha, setSenha]= useState('');
     const [imgPerfil, setImgPerfil]= useState(null);
 
+    async function cancelar(){
+        history.push('/');
+    }
+
     const preview=useMemo(()=>{
         return imgPerfil ? URL.createObjectURL(imgPerfil):null;
     },[imgPerfil])
@@ -37,7 +41,8 @@ export default function Cadastro({ history }){
     return (
     <div className="container">
         <form className="form" onSubmit={handleSubmit}>
-            <label id="imgPerfil" style={{backgroundImage: `url(${preview})` }}>
+            <label id="imgPerfil" style={{backgroundImage: `url(${preview})` }}
+            className={imgPerfil ? 'tem-imgPerfil': ''}>
                 <input type="file"
                 onChange={event=>setImgPerfil(event.target.files[0])} />
             </label>
@@ -65,8 +70,10 @@ export default function Cadastro({ history }){
             placeholder="Digite uma senha"
             value={senha}
             onChange={event=>setSenha(event.target.value)}/> 
-            <button type="submit">Cadastrar</button>
+            <button className="cadastrar" type="submit">Cadastrar</button>
+            <button className="cancelar" onClick={cancelar}>Cancelar</button>
         </form>
+        
         
     </div>
     );

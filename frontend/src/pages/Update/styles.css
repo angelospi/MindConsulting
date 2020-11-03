@@ -1,44 +1,67 @@
-.container{
+.atualizacao{
     width: 100%;
     height: 150vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     color: #ffffff;
     background: #f3615a;
 }
-.container form{
+.atualizacao form{
     display: flex;
     align-items: center;
+    flex-direction: column;
 
     width: 550px;
+    height: 600px;
     border-radius: 50px;
     background-color: #00000031;
 }
-.container form div.form-group{
+.atualizacao form div.form-group{
     
     display: flex;
     flex-direction: row;
     width: 500px;
     height: 60px;
     margin-left: 80px;
+    margin-top: 10px;
 
  
 }
 
-.container form div.form-group input{
+.atualizacao form div.form-group input{
     margin-left: 30px;
     border-radius:15px ;
+    height: 30px;
+    margin-top: 20px;
 }
 
-.container form div.group-button{
+.atualizacao form div.group-button{
     flex-direction: row;
     margin-left: 40px;
 }
-.container form div.group-button button{
+.atualizacao form div.group-button button{
     margin-left: 40px;
-    width: 100px;
+    width: 120px;
     height: 40px;
-    margin-top: 150px;
+    margin-top: 170px;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+
+    background-color: #850a0a;
+    cursor: pointer;
+
+}
+.atualizacao form div.group-button button:hover{
+    transition: all 400ms ease;
+    background-color: #850a0aa1;
+}
+
+
+.atualizacao form div.form-group h1{
+    color: #000000;
 }
