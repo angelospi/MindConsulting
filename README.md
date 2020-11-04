@@ -115,6 +115,7 @@ Agora, se caso a pessoa que está logada for um administrador, o mesmo cairá em
  
 <h3> Como instalar</h3>
 1. Faça um clone:
+
 ```
 https://github.com/angelospi/MindConsulting.git
 ```
