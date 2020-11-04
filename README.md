@@ -120,7 +120,20 @@ Agora, se caso a pessoa que está logada for um administrador, o mesmo cairá em
 https://github.com/angelospi/MindConsulting.git
 ```
  
+2.Rode o backend
 
+```
+cd backend
+yarn start
+```
+3. Rode o frontend
+
+```
+cd frontend
+yarn start
+```
+
+Sua aplicação ja irá abrir e poderá utiliza-lá como desejar.
 
 
 
