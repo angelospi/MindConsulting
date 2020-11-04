@@ -110,6 +110,16 @@ Agora, se caso a pessoa que está logada for um administrador, o mesmo cairá em
 
 <h2>Pré-requisitos</h2>
 
+ * É necessário possuir o NodeJS instalado na máquina
+ * É ncessário ter um gerenciador de pacotes NPM ou YARN. Nesse caso foi utilizado o YARN
+ 
+<h3> Como instalar</h3>
+1. Faça um clone:
+```
+https://github.com/angelospi/MindConsulting.git
+```
+ 
+
 
 
 
