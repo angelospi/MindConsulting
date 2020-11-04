@@ -133,7 +133,7 @@ cd frontend
 yarn start
 ```
 
-Sua aplicação ja irá abrir e poderá utiliza-lá como desejar.
+Pronto! Sua aplicação já irá abrir e poderá utiliza-lá como desejar.
 
 
 
