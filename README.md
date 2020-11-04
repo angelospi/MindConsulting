@@ -4,7 +4,8 @@
    * [Introdução](#Introdução)
    * [Desenvolvimento](#Desenvolvimento)
       * [Banco de dados](#Banco-de-dados)
-      * [Tecnologias](#Tecnologias)
+      * [Back-end](#Back-end)
+      * [Front-end](#Front-end)
    * [Funcionamento](#Funcionamento)
    * [Pré-requisitos](#remote-files)
 
@@ -29,7 +30,7 @@ Para desenvolvimento da aplicação foi necessário utilizar um banco de dados o
   ```
   Dessa forma, obteve-se o arquivo "usuario" com um arquivo json e um bson dentro.
   
-  <h2> Tecnologias</h2>
+  <h2>Back-end</h2>
     No desenvolvimento do Back-end foi utilizado a tecnologia NodeJS onde foi instalado as dependências:
     
    * [Cors](#Cors)
@@ -62,6 +63,30 @@ Para desenvolvimento da aplicação foi necessário utilizar um banco de dados o
   ```
   yarn add multer
   ```
+  <h2>Front-end</h2>
+  Com a parte do backend e conexão com o banco prontas, partiu-se para o desenvolvimento do Front-end, onde foi criado uma pasta "frontend" já com as configurações inicias necessária para usarmos a tecnologia React:
+  
+  ```
+  npm create-react-app frontend
+  ```
+  Dessa forma, o ambiente para desenvolvimento já está criado, a partir daí baixamos alguns pacotes que foi necessário utilizar como:
+  
+   * [react-router-dom](#react-router-dom)
+   * [Axios](#axios)
+   
+   <h3>React-Router-Dom</h3>
+   Essa biblioteca permiti o gerenciamento das rotas da aplicação, sendo assim foi instalada através do código:
+   
+   ```
+   yarn add react-router-dom
+   ```
+   
+   <h3>Axios</h3>
+   E então para finalizar temos o axios, do qual será necessário para termos acesso a nossa API. Esse pacote pode ser instalado pelo código: 
+   
+   ```
+   yarn add axios
+   ```
   
   
   
