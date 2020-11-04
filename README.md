@@ -93,65 +93,33 @@ Para desenvolvimento da aplicação foi necessário utilizar um banco de dados o
   A página web se inicia com a tela de login onde o usuário poderá acessar a plataforma com seu login e senha, ou realizar cadastro no link sublinhado "Não tenho cadastro".
   Isso pode ser demonstrado através da Figura 1:
   
+  ![loginmc](https://user-images.githubusercontent.com/28029224/98066779-c0676180-1e36-11eb-9936-988a36ec3ee1.PNG)
+  
+  Se caso o usuário for um usuário comum e não o administrador, seu perfil pode estar ativo ou desativado. Se estiver desativado ele não terá acesso a plataforma e se estiver ativado cairá na tela onde apresentará seus dados, demonstrado pela Figura 2:
+  
+  ![image](https://user-images.githubusercontent.com/28029224/98067662-db3ad580-1e38-11eb-9715-9c8290c86524.png)
+
+Sendo assim, o usuário poderá sair da página voltando a tela inicial ou realizar modificações que deseja caindo na próxima tela:
+
+![image](https://user-images.githubusercontent.com/28029224/98067761-0cb3a100-1e39-11eb-8bc7-8b6753687136.png)
+
+Isso finaliza a parte do usuário comum.
+Agora, se caso a pessoa que está logada for um administrador, o mesmo cairá em uma página mostrando os dados de todos os usuários com opções para editar, ativar ou desativar o usuário apresentado pela imagem abaixo: 
+
+![image](https://user-images.githubusercontent.com/28029224/98067910-6320df80-1e39-11eb-8cb4-46068d11ffc7.png)
+
+<h2>Pré-requisitos</h2>
+
+
+
+
+
   
   
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
