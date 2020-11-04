@@ -88,6 +88,12 @@ Para desenvolvimento da aplicação foi necessário utilizar um banco de dados o
    yarn add axios
    ```
   
+  <h3>Funcionamento</h3>
+  
+  A página web se inicia com a tela de login onde o usuário poderá acessar a plataforma com seu login e senha, ou realizar cadastro no link sublinhado "Não tenho cadastro".
+  Isso pode ser demonstrado através da Figura 1:
+  
+  
   
   
   
